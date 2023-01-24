@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import { useEffect, useState } from 'react';
 import AnimatedLetter from '../AnimatedLetters';
+// import Logo from './Logo';
 // import LogoN from '../../assets/images/Nilay_N.png'
 
 const Home = () => {
@@ -9,7 +10,6 @@ const Home = () => {
 
     const nameArray=[' ', 'N', 'i', 'l', 'a', 'y', '!']
     const jobArray=['2', 'n', 'd', ' ', 'y', 'e', 'a', 'r', ' ', 'u', 'n', 'd', 'e', 'r', 'g', 'r', 'a', 'd', 'u', 'a', 't', 'e', ' ', 'a', 't', ' ', 'I', 'I', 'I', 'T', '-', 'B']
-    // , 'a', 'n', 'g', 'a', 'l', 'o', 'r', 'e', '!']
 
     useEffect(() => {
         setTimeout(() => {
@@ -19,7 +19,7 @@ const Home = () => {
 
     return (
         <div className="container home-page">
-            <div className="text-zone" style={{"wordWrap":"break-word"}}>
+            <div className="text-zone">
                 <h1>
                     <span className={letterClass}>H</span>
                     <span className={`${letterClass} _12`}>i!</span>
@@ -32,6 +32,7 @@ const Home = () => {
                 <h2>CTF Enthusiast / App Developer</h2>
                 <Link to='/contact' className='flat-button'>Contact me here</Link>
             </div>
+            {/* <Logo /> */}
         </div>
     );
 }
