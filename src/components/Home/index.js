@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import { useEffect, useState } from 'react';
 import AnimatedLetter from '../AnimatedLetters';
-// import Logo from './Logo';
 // import LogoN from '../../assets/images/Nilay_N.png'
 
 const Home = () => {
@@ -32,7 +31,6 @@ const Home = () => {
                 <h2>CTF Enthusiast / App Developer</h2>
                 <Link to='/contact' className='flat-button'>Contact me here</Link>
             </div>
-            {/* <Logo /> */}
         </div>
     );
 }
